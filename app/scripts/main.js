@@ -72,9 +72,12 @@
     });
 
     $('#main-menu .m-menu .m-dropdown a').on('click', function() {
-      if($(this).parents('.m-menu').find('.m-dropdown-item').hasClass('show'))
-        $(this).parents('.m-menu').find('.m-dropdown-item').removeClass('show')
-      $(this).parent().find('.m-dropdown-item').toggleClass('show')
+      if($(this).parent().siblings('.m-dropdown').find('.m-dropdown-item').hasClass('show')) {
+        $(this).parent().siblings('.m-dropdown').find('.m-dropdown-item').removeClass('show')
+        $(this).parent().siblings('.m-dropdown').find('a').removeClass('show')
+      }
+      $(this).toggleClass('show')
+      $(this).siblings('.m-dropdown-item').toggleClass('show')
     });
   });
 })();

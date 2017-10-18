@@ -13,7 +13,7 @@ header {
       left: 77% !important;
     }
   }
-  #toggle-menu{
+  #toggle-menu {
     background: transparent;
     color: #fff;
     top: 10px;
@@ -93,7 +93,7 @@ header {
     &.in {
       left: -80% !important;
     }
-    .m-info{
+    .m-info {
       padding-bottom: 10px;
       height: 217px;
       background: url('/images/menu/character.jpg') no-repeat center;
@@ -101,7 +101,7 @@ header {
       .w-100{
         width: 100%;
       }
-      .m-info-name{
+      .m-info-name {
         font-size: 14px;
         font-weight: 600;
         position: relative;
@@ -235,11 +235,11 @@ header {
             }
           }
         }
-        &.m-dropdown{
+        &.m-dropdown {
           background: rgba(255, 255, 255, 0.05);
           transition: all .3s ease;
-          a{
-            &.nav-link{
+          a {
+            &.nav-link {
               padding-left: 54px;
               padding-top: 10px;
               padding-bottom: 10px;

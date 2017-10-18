@@ -44,8 +44,6 @@
     <link rel="stylesheet" href="styles/components.css">
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/page-home.css">
-    <link rel="stylesheet" href="../../../freelance-sunlife1/dist/styles/header.css">
-    <link rel="stylesheet" href="../../../freelance-sunlife1/app/styles/header.scss">
   </head>
   <body>
     <!-- Add your site or app content here -->
@@ -58,8 +56,8 @@
                 <span></span>
               </button>
             </div>
-            <div class="col-4">
-              <img class="img-fluid" src="images/page_home/logo.png" alt="" />
+            <div class="col-4 text-center">
+              <img class="img-fluid d-inline-block" src="images/page_home/logo.png" alt="" />
             </div>
           </div>
         </div>
@@ -67,21 +65,19 @@
       <ul id="main-menu" class="menu-collapse in">
         <div class="m-info d-flex align-items-end">
           <div class="mt-auto text-center w-100">
-            <div class="m-info-name mx-auto">ĐÀO VIẾT HƯƠNG
-              <span></span>
-            </div>
+            <div class="m-info-name mx-auto d-inline-block">ĐÀO VIẾT HƯƠNG</div>
             <hr>
             <div class="d-flex justify-content-around">
-              <div class="m-info-text">Đổi mật khẩu</div>
-              <div class="m-info-text">Đăng xuất</div>
+              <div class="m-info-text m-info-pass">Đổi mật khẩu</div>
+              <div class="m-info-text m-info-logout">Đăng xuất</div>
             </div>
           </div>
         </div>
         <div class="m-menu">
-          <div class="m-menu-item"><a class="nav-link" href="javascript:void(0)">Trang chủ</a></div>
-          <div class="m-menu-item"><a class="nav-link" href="javascript:void(0)">Tìm kiếm</a></div>
+          <div class="m-menu-item"><a class="nav-link nav-home" href="javascript:void(0)">Trang chủ</a></div>
+          <div class="m-menu-item"><a class="nav-link nav-search" href="javascript:void(0)">Tìm kiếm</a></div>
           <div class="m-menu-item m-dropdown">
-            <a href="javascript:void(0)" class="nav-link"><span> > </span> Tình trạng thẩm định</a>
+            <a href="javascript:void(0)" class="nav-link nav-files">Tình trạng thẩm định</a>
             <div class="m-dropdown-item">
               <a href="javascript:void(0)">Chờ thẩm định</a>
               <a href="javascript:void(0)">Yêu cầu bổ sung thông tin</a>
@@ -89,7 +85,7 @@
             </div>
           </div>
           <div class="m-menu-item m-dropdown">
-            <a href="javascript:void(0)" class="nav-link"><span> > </span> HĐ đã phát hành</a>
+            <a href="javascript:void(0)" class="nav-link nav-hdong">HĐ đã phát hành</a>
             <div class="m-dropdown-item">
               <a href="javascript:void(0)">Chờ biên nhận bàn giao</a>
               <a href="javascript:void(0)">Trong thời hạn cân nhắc</a>
@@ -98,14 +94,14 @@
             </div>
           </div>
           <div class="m-menu-item m-dropdown">
-            <a href="javascript:void(0)" class="nav-link"><span> > </span> Phí bảo hiểm</a>
+            <a href="javascript:void(0)" class="nav-link nav-baohiem">Phí bảo hiểm</a>
             <div class="m-dropdown-item">
               <a href="javascript:void(0)">Chờ thẩm định</a>
               <a href="javascript:void(0)">Yêu cầu bổ sung thông tin</a>
               <a href="javascript:void(0)">Yêu cầu thư thỏa thuận</a>
             </div>
           </div>
-          <div class="m-menu-item"><a class="nav-link" href="javascript:void(0)">Điều khoản sử dụng</a></div>
+          <div class="m-menu-item"><a class="nav-link nav-dksd" href="javascript:void(0)">Điều khoản sử dụng</a></div>
         </div>
       </ul>
     </header>

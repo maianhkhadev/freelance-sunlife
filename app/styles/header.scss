@@ -3,16 +3,13 @@ header {
   background-color: #eaab00;
   .nav-header{
     position: relative;
-    -webkit-transition: left 0.3s;
-    -moz-transition: left 0.3s;
-    -ms-transition: left 0.3s;
     transition: left 0.3s;
     z-index: 1034;
     &.out {
       left: 77% !important;
     }
   }
-  #toggle-menu{
+  #toggle-menu {
     background: transparent;
     color: #fff;
     top: 10px;
@@ -31,10 +28,6 @@ header {
       opacity: 1;
       position: absolute;
       content: ' ';
-      -webkit-transition: all 0.75s;
-      -moz-transition: all 0.75s;
-      -ms-transition: all 0.75s;
-      -o-transition: all 0.75s;
       transition: all 0.75s;
     }
     &:before {
@@ -91,14 +84,14 @@ header {
     &.in {
       left: -80% !important;
     }
-    .m-info{
+    .m-info {
       padding-bottom: 10px;
       height: 217px;
       background: #cdcdcd;
-      .w-100{
+      .w-100 {
         width: 100%;
       }
-      .m-info-name{
+      .m-info-name {
         font-size: 14px;
         font-weight: 600;
         position: relative;
@@ -138,20 +131,20 @@ header {
           color: #fff;
           text-decoration: none !important;
         }
-        &.m-dropdown{
+        &.m-dropdown {
           background: rgba(255, 255, 255, 0.05);
           -webkit-transition: all .3s ease;
           -moz-transition: all .3s ease;
           -ms-transition: all .3s ease;
           -o-transition: all .3s ease;
           transition: all .3s ease;
-          a{
-            &.nav-link{
+          a {
+            &.nav-link {
               padding-left: 54px;
               padding-top: 10px;
               padding-bottom: 10px;
               position: relative;
-              span{
+              span {
                 content: '>';
                 width: 13px;
                 height: 14px;

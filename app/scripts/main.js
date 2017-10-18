@@ -30,7 +30,7 @@
           // https://slightlyoff.github.io/ServiceWorker/spec/service_worker/index.html#service-worker-container-updatefound-event
           var installingWorker = registration.installing;
 
-          installingWorker.onstatechange = function() {
+          installingWorker.onstatechange = function () {
             switch (installingWorker.state) {
               case 'installed':
                 // At this point, the old content will have been purged and the
@@ -65,7 +65,7 @@
       arrows: false
     });
 
-    $('#toggle-menu').on('click', function() {
+    $('#toggle-menu').on('click', function () {
       $('#toggle-menu').toggleClass('opened')
       $('#main-menu').toggleClass('in')
       $('header .nav-header').toggleClass('out')

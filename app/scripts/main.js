@@ -64,5 +64,17 @@
       dots: true,
       arrows: false
     });
+
+    $('#toggle-menu').on('click', function() {
+      $('#toggle-menu').toggleClass('opened')
+      $('#main-menu').toggleClass('in')
+      $('header .nav-header').toggleClass('out')
+    });
+
+    $('#main-menu .m-menu .m-dropdown a').on('click', function() {
+      if($(this).parents('.m-menu').find('.m-dropdown-item').hasClass('show'))
+        $(this).parents('.m-menu').find('.m-dropdown-item').removeClass('show')
+      $(this).parent().find('.m-dropdown-item').toggleClass('show')
+    });
   });
 })();

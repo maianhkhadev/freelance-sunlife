@@ -44,23 +44,70 @@
     <link rel="stylesheet" href="styles/components.css">
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/page-home.css">
+    <link rel="stylesheet" href="../../../freelance-sunlife1/dist/styles/header.css">
+    <link rel="stylesheet" href="../../../freelance-sunlife1/app/styles/header.scss">
   </head>
   <body>
     <!-- Add your site or app content here -->
     <header>
-      <div class="container">
-        <div class="row">
-          <div class="col-4">
-            <svg class="" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 30 30" width="43" height="35">
-              <title>Menu</title>
-              <path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/>
-            </svg>
-          </div>
-          <div class="col-4">
-            <img class="img-fluid" src="images/page_home/logo.png" alt="" />
+      <nav class="nav-header">
+        <div class="container">
+          <div class="row">
+            <div class="col-4">
+              <button id="toggle-menu">
+                <span></span>
+              </button>
+            </div>
+            <div class="col-4">
+              <img class="img-fluid" src="images/page_home/logo.png" alt="" />
+            </div>
           </div>
         </div>
-      </div>
+      </nav>
+      <ul id="main-menu" class="menu-collapse in">
+        <div class="m-info d-flex align-items-end">
+          <div class="mt-auto text-center w-100">
+            <div class="m-info-name mx-auto">ĐÀO VIẾT HƯƠNG
+              <span></span>
+            </div>
+            <hr>
+            <div class="d-flex justify-content-around">
+              <div class="m-info-text">Đổi mật khẩu</div>
+              <div class="m-info-text">Đăng xuất</div>
+            </div>
+          </div>
+        </div>
+        <div class="m-menu">
+          <div class="m-menu-item"><a class="nav-link" href="javascript:void(0)">Trang chủ</a></div>
+          <div class="m-menu-item"><a class="nav-link" href="javascript:void(0)">Tìm kiếm</a></div>
+          <div class="m-menu-item m-dropdown">
+            <a href="javascript:void(0)" class="nav-link"><span> > </span> Tình trạng thẩm định</a>
+            <div class="m-dropdown-item">
+              <a href="javascript:void(0)">Chờ thẩm định</a>
+              <a href="javascript:void(0)">Yêu cầu bổ sung thông tin</a>
+              <a href="javascript:void(0)">Yêu cầu thư thỏa thuận</a>
+            </div>
+          </div>
+          <div class="m-menu-item m-dropdown">
+            <a href="javascript:void(0)" class="nav-link"><span> > </span> HĐ đã phát hành</a>
+            <div class="m-dropdown-item">
+              <a href="javascript:void(0)">Chờ biên nhận bàn giao</a>
+              <a href="javascript:void(0)">Trong thời hạn cân nhắc</a>
+              <a href="javascript:void(0)">Hủy trong thời hạn cân nhắc</a>
+              <a href="javascript:void(0)">Mất hiệu lực</a>
+            </div>
+          </div>
+          <div class="m-menu-item m-dropdown">
+            <a href="javascript:void(0)" class="nav-link"><span> > </span> Phí bảo hiểm</a>
+            <div class="m-dropdown-item">
+              <a href="javascript:void(0)">Chờ thẩm định</a>
+              <a href="javascript:void(0)">Yêu cầu bổ sung thông tin</a>
+              <a href="javascript:void(0)">Yêu cầu thư thỏa thuận</a>
+            </div>
+          </div>
+          <div class="m-menu-item"><a class="nav-link" href="javascript:void(0)">Điều khoản sử dụng</a></div>
+        </div>
+      </ul>
     </header>
     <div class="container">
       <div class="row">

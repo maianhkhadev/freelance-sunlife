@@ -1,8 +1,197 @@
 header {
+  overflow: hidden;
   background-color: #eaab00;
+  .nav-header{
+    position: relative;
+    -webkit-transition: left 0.3s;
+    -moz-transition: left 0.3s;
+    -ms-transition: left 0.3s;
+    transition: left 0.3s;
+    z-index: 1034;
+    &.out {
+      left: 77% !important;
+    }
+  }
+  #toggle-menu{
+    background: transparent;
+    color: #fff;
+    top: 10px;
+    left: 10px;
+    height: 100%;
+    width: 50px;
+    height: 50px;
+    border-radius: 0;
+    outline: none;
+    border: none;
+    &:before, &:after, span {
+      width: 38px;
+      height: 3px;
+      background-color: #fff;
+      display: block;
+      opacity: 1;
+      position: absolute;
+      content: ' ';
+      -webkit-transition: all 0.75s;
+      -moz-transition: all 0.75s;
+      -ms-transition: all 0.75s;
+      -o-transition: all 0.75s;
+      transition: all 0.75s;
+    }
+    &:before {
+      top: 14px;
+    }
 
-  svg {
-    margin-top: 5px;
-    color: white;
+    span {
+      top: 24px;
+    }
+
+    &:after {
+      bottom: 15px;
+    }
+    &.opened {
+      span {
+        opacity: 0;
+      }
+
+      &:before, &:after {
+        top: 50%;
+        margin-top: - 3px / 2;
+        left: 20px;
+      }
+
+      &:before {
+        transform: rotate(45deg);
+      }
+
+      &:after {
+        transform: rotate(-45deg);
+      }
+    }
+  }
+  #main-menu {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 70%;
+    min-width: 300px;
+    position: fixed;
+    -webkit-transition: left 0.3s;
+    -moz-transition: left 0.3s;
+    -ms-transition: left 0.3s;
+    transition: left 0.3s;
+    background-color: #003946;
+    z-index: 9999;
+    text-align: left;
+    padding-left: 0;
+    border-left: 1px solid #c5c5c5;
+    float: none !important;
+    height: 100%;
+    color: #fff;
+    overflow: scroll;
+    &.in {
+      left: -80% !important;
+    }
+    .m-info{
+      padding-bottom: 10px;
+      height: 217px;
+      background: #cdcdcd;
+      .w-100{
+        width: 100%;
+      }
+      .m-info-name{
+        font-size: 14px;
+        font-weight: 600;
+        position: relative;
+        span{
+          background: url('/images/menu/arr-right.png') no-repeat center;
+          width: 17px;
+          height: 17px;
+          position: absolute;
+          right: 0;
+          top: 0;
+        }
+      }
+      hr{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ffffff;
+      }
+      .m-info-text{
+        font-size: 12px;
+        font-weight: 300;
+      }
+    }
+    .m-menu{
+      padding-top: 38px;
+      .m-menu-item{
+        font-size: 13px;
+        position: relative;
+        a{
+          &.nav-link{
+            padding-left: 54px;
+            padding-right: 5px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+          }
+          display: block;
+          width: 100%;
+          color: #fff;
+          text-decoration: none !important;
+        }
+        &.m-dropdown{
+          background: rgba(255, 255, 255, 0.05);
+          -webkit-transition: all .3s ease;
+          -moz-transition: all .3s ease;
+          -ms-transition: all .3s ease;
+          -o-transition: all .3s ease;
+          transition: all .3s ease;
+          a{
+            &.nav-link{
+              padding-left: 54px;
+              padding-top: 10px;
+              padding-bottom: 10px;
+              position: relative;
+              span{
+                content: '>';
+                width: 13px;
+                height: 14px;
+                font-size: 14px;
+                color: #eaab00;
+                position: absolute;
+                right: 20px;
+                top: 6px;
+              }
+            }
+          }
+          .m-dropdown-item{
+            background: rgba(255, 255, 255, 0.1);
+            visibility: hidden;
+            height: 0;
+            opacity: 0;
+            -webkit-transform: scale(0);
+            transform: scale(0);
+            -webkit-transition: all .3s ease;
+            -moz-transition: all .3s ease;
+            -ms-transition: all .3s ease;
+            -o-transition: all .3s ease;
+            transition: all .3s ease;
+            a{
+              padding-left: 65px;
+              padding-top: 10px;
+              &:last-child{
+                padding-bottom: 10px;
+              }
+            }
+            &.show{
+              visibility: visible;
+              height: auto;
+              opacity: 1;
+              -webkit-transform: scale(1);
+              transform: scale(1);
+            }
+          }
+        }
+      }
+    }
   }
 }

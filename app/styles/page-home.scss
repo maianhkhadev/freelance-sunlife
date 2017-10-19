@@ -1,9 +1,68 @@
 @import "variables";
 
-.table {
+.box-slider {
+  margin-top: 1.071rem;
 
-  th {
+  .slick-dots li button:before {
+    color: #000000;
+  }
+  .slick-dots li.slick-active button:before {
+    color: #eaab00;
+  }
+}
+
+.box-brief {
+  padding-top: 1.25rem;
+
+  &::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 9.143rem;
+    height: 0.7143rem;
+    background-color: #003946;
+  }
+
+  .note {
+    color: #82786f;
     font-size: 0.7857rem;
+    font-weight: 300;
+    margin-bottom: 0.5rem;
+  }
+
+  .table {
+
+    td {
+      vertical-align: middle;
+    }
+    .column-name {
+      color: #181818;
+      font-size: 0.7857rem;
+      font-weight: 300;
+      text-align: center;
+      border: 0;
+
+      span {
+        color: #003946;
+        font-size: 1rem;
+        font-weight: 600;
+      }
+    }
+
+    .row-name {
+      color: #181818;
+      font-size: 0.7857rem;
+      font-style: italic;
+      text-align: center;
+    }
+
+    .cell {
+      color: #eaab00;
+      font-size: 0.7857rem;
+      font-weight: 600;
+      text-align: center;
+    }
   }
 }
 
@@ -38,4 +97,9 @@
 .box-feature-right {
   margin-left: -10px;
   margin-right: -5px;
+}
+
+#detail-modal {
+  color: #1d1d26;
+  line-height: 1.71;
 }

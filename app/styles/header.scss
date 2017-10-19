@@ -1,6 +1,9 @@
 header {
   overflow: hidden;
   background-color: #eaab00;
+  z-index: 1034;
+  position: sticky;
+  top: 0;
   .nav-header{
     position: relative;
     transition: left 0.3s;
@@ -23,6 +26,7 @@ header {
     border-radius: 0;
     outline: none;
     border: none;
+    z-index: 1034;
     &:before, &:after, span {
       width: 25px;
       height: 1px;

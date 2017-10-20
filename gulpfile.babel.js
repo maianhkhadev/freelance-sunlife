@@ -80,7 +80,7 @@ gulp.task('styles', () => {
     'android >= 4.4',
     'bb >= 10'
   ];
-  console.log($)
+
   // For best performance, don't add Sass partials to `gulp.src`
   return gulp.src([
     'app/styles/**/*.scss',

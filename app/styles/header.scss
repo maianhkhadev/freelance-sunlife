@@ -5,7 +5,7 @@ header {
   position: sticky;
   top: 0;
   &.subpage{
-    background: url('/images/menu/character.jpg') no-repeat center;
+    background: url('../images/menu/character.jpg') no-repeat center;
     background-size: cover;
     min-height: 195px;
     position: relative;
@@ -104,7 +104,7 @@ header {
     .m-info {
       padding-bottom: 10px;
       height: 217px;
-      background: url('/images/menu/character.jpg') no-repeat center;
+      background: url('../images/menu/character.jpg') no-repeat center;
       background-size: cover;
       .w-100{
         width: 100%;
@@ -116,7 +116,7 @@ header {
         padding: 0 30px;
         &:after{
           content: '';
-          background: url('/images/menu/arr-right.svg') no-repeat center;
+          background: url('../images/menu/arr-right.svg') no-repeat center;
           width: 17px;
           height: 17px;
           position: absolute;
@@ -137,7 +137,7 @@ header {
         &.m-info-pass{
           &:before{
             content: '';
-            background: url('/images/menu/password.svg') no-repeat center;
+            background: url('../images/menu/password.svg') no-repeat center;
             width: 20px;
             height: 20px;
             position: absolute;
@@ -148,7 +148,7 @@ header {
         &.m-info-logout{
           &:before{
             content: '';
-            background: url('/images/menu/logout.svg') no-repeat center;
+            background: url('../images/menu/logout.svg') no-repeat center;
             width: 20px;
             height: 20px;
             position: absolute;
@@ -178,7 +178,7 @@ header {
             &.nav-home{
               &:before{
                 content: '';
-                background: url('/images/menu/home.svg') no-repeat center;
+                background: url('../images/menu/home.svg') no-repeat center;
                 width: 20px;
                 height: 20px;
                 position: absolute;
@@ -189,7 +189,7 @@ header {
             &.nav-search{
               &:before{
                 content: '';
-                background: url('/images/menu/search.svg') no-repeat center;
+                background: url('../images/menu/search.svg') no-repeat center;
                 width: 20px;
                 height: 20px;
                 position: absolute;
@@ -200,7 +200,7 @@ header {
             &.nav-files{
               &:before{
                 content: '';
-                background: url('/images/menu/file.svg') no-repeat center;
+                background: url('../images/menu/file.svg') no-repeat center;
                 width: 16px;
                 height: 20px;
                 position: absolute;
@@ -211,7 +211,7 @@ header {
             &.nav-hdong{
               &:before{
                 content: '';
-                background: url('/images/menu/hdong.svg') no-repeat center;
+                background: url('../images/menu/hdong.svg') no-repeat center;
                 width: 16px;
                 height: 20px;
                 position: absolute;
@@ -222,7 +222,7 @@ header {
             &.nav-baohiem{
               &:before{
                 content: '';
-                background: url('/images/menu/baohiem.svg') no-repeat center;
+                background: url('../images/menu/baohiem.svg') no-repeat center;
                 width: 16px;
                 height: 20px;
                 position: absolute;
@@ -233,7 +233,7 @@ header {
             &.nav-dksd{
               &:before{
                 content: '';
-                background: url('/images/menu/dksd.svg') no-repeat center;
+                background: url('../images/menu/dksd.svg') no-repeat center;
                 width: 24px;
                 height: 20px;
                 position: absolute;
@@ -254,7 +254,7 @@ header {
               position: relative;
               &:after{
                 content: '';
-                background: url('/images/menu/arr-down.svg') no-repeat center;
+                background: url('../images/menu/arr-down.svg') no-repeat center;
                 width: 13px;
                 height: 14px;
                 font-size: 14px;

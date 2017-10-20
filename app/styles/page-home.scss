@@ -44,7 +44,7 @@
       text-align: center;
       border: 0;
 
-      span {
+      div {
         color: #003946;
         font-size: 1rem;
         font-weight: 600;
@@ -103,4 +103,20 @@
 #detail-modal {
   color: #1d1d26;
   line-height: 1.71;
+
+  .modal-dialog {
+    margin-top: 7.143rem;
+  }
+
+  .modal-content {
+    padding: 0.125rem;
+
+    .btn {
+      font-weight: bold;
+      border-radius: 3.571rem;
+      padding-top: 1.429rem;
+      padding-bottom: 1.429rem;
+      margin-bottom: 1.429rem;
+    }
+  }
 }

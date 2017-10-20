@@ -37,9 +37,18 @@
   padding: 0.7rem;
 
   .title {
-    background-color: #d0651e;
+    position: absolute;
+    top: 0;
+    left: 0;
     padding: 0.25rem 0.5rem;
     border-radius: 1px;
+  }
+}
+// Americano
+.box-orange {
+
+  .title {
+    background-color: #d0651e;
   }
 }
 

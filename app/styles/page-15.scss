@@ -1,0 +1,152 @@
+@import "variables";
+
+.z-index-1033{
+  position: relative;
+  z-index: 1033;
+}
+.rp-title{
+  margin-left: 15px;
+  color: #003946;
+  font-size: 18px;
+  font-weight: bold;
+  padding-left: 16px;
+  position: relative;
+  margin-top: 32px;
+  margin-bottom: 25px;
+  &:before{
+    content: '';
+    background: #EAAB00;
+    width: 31px;
+    height: 31px;
+    position: absolute;
+    top: -7px;
+    left: 0;
+    z-index: -1;
+  }
+}
+#rp-tabpanel{
+  ul{
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 18px;
+    border: none;
+    li{
+      width: 33.3333%;
+      padding-left: 10px;
+      padding-right: 10px;
+      a{
+        display: block;
+        font-size: 13px;
+        font-weight: 600;
+        color: #c0c0c0;
+        width: 100%;
+        position: relative;
+        &:hover, &:focus, &.active{
+          text-decoration: none;
+          color: #181818;
+          &:after{
+            content: '';
+            height: 7px;
+            background: #eaab00;
+            width: 100%;
+            position: absolute;
+            bottom: 1px;
+            left: 0;
+            z-index: -1;
+          }
+        }
+      }
+    }
+  }
+  .tab-pane{
+    background: #fff;
+    padding: 15px 13px 22px 15px;
+    .tabp-title{
+      font-size: 18px;
+      font-weight: 600;
+      color: #eaab00;
+      margin-bottom: 3px;
+    }
+    .tabp-time{
+      font-size: 12px;
+      font-weight: 300;
+      color: #82786f;
+      margin-bottom: 13px;
+    }
+    .tabp-code{
+      font-size: 14px;
+      font-weight: 600;
+      color: #003946;
+      margin-bottom: 17px;
+      position: relative;
+      display: inline-block;
+      padding-right: 20px;
+      &:after{
+        content: '';
+        background: url('/images/menu/arr-down.svg') no-repeat center;
+        width: 13px;
+        height: 14px;
+        font-size: 14px;
+        color: #eaab00;
+        position: absolute;
+        top: 3px;
+        right: 0;
+        transform: rotate(90deg);
+      }
+    }
+    .tabp-fyp{
+      font-size: 12px;
+      font-weight: 300;
+      color: #82786f;
+      margin-bottom: 25px;
+      span{
+        font-size: 20px;
+        font-weight: 600;
+        color: #181818;
+        margin-right: 6px;
+      }
+    }
+    .tabp-level{
+      font-size: 12px;
+      font-weight: 600;
+      color: #181818;
+      margin-bottom: 20px;
+      span{
+        font-size: 18px;
+        font-weight: 600;
+        color: #eaab00;
+        margin-left: 5px;
+      }
+    }
+    .tabp-profit{
+      font-size: 14px;
+      font-weight: 600;
+      color: #181818;
+      margin-bottom: 14px;
+    }
+    .tabp-profit1{
+      font-size: 12px;
+      font-weight: 300;
+      color: #181818;
+      margin-bottom: 14px;
+    }
+    .tabp-profit-number{
+      font-size: 24px;
+      font-weight: 600;
+      color: #eaab00;
+      margin-bottom: 12px;
+    }
+    .tabp-hd{
+      margin-top: 27px;
+      font-size: 12px;
+      font-weight: 600;
+      color: #181818;
+      span{
+        font-size: 18px;
+        font-weight: 600;
+        color: #eaab00;
+        margin-left: 5px;
+      }
+    }
+  }
+}

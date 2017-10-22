@@ -26,5 +26,8 @@
       $(this).toggleClass('show')
       $(this).siblings('.m-dropdown-item').toggleClass('show')
     })
+    $('#f-subpage li a.f-menu').on('click', function(){
+      $('#toggle-menu').trigger('click')
+    })
   })
 })(jQuery)

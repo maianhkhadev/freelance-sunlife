@@ -37,11 +37,30 @@
   padding: 0.7rem;
 
   .title {
+    color: $color-white;
+    font-size: 0.8571rem;
+    font-weight: 300;
     position: absolute;
     top: 0;
     left: 0;
     padding: 0.25rem 0.5rem;
     border-radius: 1px;
+    margin: 0;
+  }
+}
+.box-contract {
+  padding: 1.75rem 1.571rem 1.214rem;
+  margin-bottom: 0.7143rem;
+
+  div {
+    color: #181818;
+    font-size: 0.8571rem;
+    font-weight: 300;
+    margin-top: 0.5rem;
+
+    span {
+      font-weight: 600;
+    }
   }
 }
 // Americano

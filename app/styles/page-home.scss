@@ -3,8 +3,13 @@
 .box-slider {
   margin-top: 1.071rem;
 
+  .slick-dots li {
+    margin: 0;
+  }
+
   .slick-dots li button:before {
     color: #000000;
+    font-size: 0.5rem;
   }
   .slick-dots li.slick-active button:before {
     color: #eaab00;
@@ -110,6 +115,13 @@
 
   .modal-content {
     padding: 0.125rem;
+
+    .close {
+      position: absolute;
+      top: -35px;
+      right: 0;
+      transform: rotate(45deg);
+    }
 
     .btn {
       font-weight: bold;

@@ -36,8 +36,9 @@ footer {
   padding-bottom: 0.5714rem;
   &#f-subpage{
     background: #003946;
-    position: relative;
-    z-index: 1;
+    position: sticky;
+    bottom: 0;
+    z-index: 1035;
     margin-top: 33px;
     margin-bottom: 0;
     padding-bottom: 0;
@@ -62,7 +63,7 @@ footer {
           &.f-menu{
             &:before{
               content: '';
-              background: url('/images/menu/search.svg') no-repeat center;
+              background: url('/images/menu/f-menu.svg') no-repeat center;
               width: 20px;
               height: 20px;
               position: absolute;
@@ -74,8 +75,8 @@ footer {
           &.f-hd{
             &:before{
               content: '';
-              background: url('/images/menu/search.svg') no-repeat center;
-              width: 20px;
+              background: url('/images/menu/f-hd.svg') no-repeat center;
+              width: 16px;
               height: 20px;
               position: absolute;
               left: 50%;

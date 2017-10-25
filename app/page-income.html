@@ -36,11 +36,13 @@
     <link rel="canonical" href="http://www.example.com/">
     -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
     <script src="https://use.fontawesome.com/264c9776a5.js"></script>
     <!-- Your styles -->
     <link rel="stylesheet" href="styles/core.css">
     <link rel="stylesheet" href="styles/components.css">
     <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/page-income.css">
   </head>
   <body>
     <!-- Add your site or app content here -->
@@ -105,29 +107,91 @@
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <div class="page-title">CHI TIẾT HỢP ĐỒNG</div>
+          <div class="page-title">THU NHẬP</div>
         </div>
         <div class="col-12">
-          <div class="box box-contract box-contract-orange">
-            <div class="title">Chờ bổ sung thông tin</div>
-            <div>Số hợp đồng: <span>1345672753</span></div>
-            <div>Sản phẩm chính: <span>BH tai nạn</span></div>
-            <div>Ngày nhận hồ sơ: <span>15/08/2017</span></div>
-            <div>Bên mua bảo hiểm: <span>Nguyễn Tường Vân</span></div>
-            <div>Người được bảo hiểm: <span>Nguyễn Tường Vân</span></div>
-            <div>Chi tiết yêu cầu: <span>N/A</span></div>
-            <div>Ngày bắt đầu có yêu cầu Thẩm định: <span>10/08/2017</span></div>
-            <div>Ngày hết hạn yêu cầu Thẩm định: <span>15/08/2017</span></div>
-            <div>Tổng số ngày chờ bổ sung thông tin: <span>15</span></div>
-            <div>SĐT Bên mua bảo hiểm: <span>0907 657 812</span></div>
+          <div class="form-check form-check-inline">
+            <label class="form-check-label">
+              <input class="form-check-input" type="radio"> TẤT CẢ
+            </label>
           </div>
-          <div class="box box-contract box-contract-light-blue">
-            <div class="title">Chờ thẩm định</div>
-            <div>Số hợp đồng: <span>1345672753</span></div>
-            <div>Sản phẩm chính: <span>BH tai nạn</span></div>
-            <div>Ngày nhận hồ sơ: <span>15/08/2017</span></div>
-            <div>Bên mua bảo hiểm: <span>Nguyễn Tường Vân</span></div>
-            <div>SĐT Bên mua bảo hiểm:<span> 0907 657 812</span></div>
+          <div class="form-check form-check-inline">
+            <label class="form-check-label">
+              <input class="form-check-input" type="radio"> TÙY CHỌN
+            </label>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="row">
+            <div class="col-4">
+              Ngày thanh toán
+            </div>
+            <div class="col-4">
+              Thu nhập thực nhận (vnd)
+            </div>
+            <div class="col-4">
+              Chi tiết thu nhập
+            </div>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="box box-income">
+            <div class="row">
+              <div class="col-4">
+                30/08/2017
+              </div>
+              <div class="col-4">
+                999,999,999
+              </div>
+              <div class="col-4">
+                Bảng lương tháng 7/2017
+              </div>
+              <div class="col-12">
+                <a data-toggle="collapse" href="#exampleAccordion2">+ Xem chi tiết</a>
+                <div id="exampleAccordion2" class="collapse income-detail" role="tabpanel">
+                  <div class="data">Tổng số: <span>67,701,98</span></div>
+                  <div class="data">Tổng số: <span>67,701,98</span></div>
+                  <div class="data">Tổng số: <span>67,701,98</span></div>
+                  <div class="data">Tổng số: <span>67,701,98</span></div>
+                  <div class="data">Tổng số: <span>67,701,98</span></div>
+                  <div class="data">Tổng số: <span>67,701,98</span></div>
+                  <div>Tải về</div>
+                  <div>- Thu nhỏ</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="box box-income">
+            <div class="row">
+              <div class="col-4">
+                Ngày thanh toán
+              </div>
+              <div class="col-4">
+                Thu nhập thực nhận (vnd)
+              </div>
+              <div class="col-4">
+                Chi tiết thu nhập
+              </div>
+              <div class="col-12">
+                <a href="#">Xem chi tiết</a>
+              </div>
+            </div>
+          </div>
+          <div class="box box-income">
+            <div class="row">
+              <div class="col-4">
+                Ngày thanh toán
+              </div>
+              <div class="col-4">
+                Thu nhập thực nhận (vnd)
+              </div>
+              <div class="col-4">
+                Chi tiết thu nhập
+              </div>
+              <div class="col-12">
+                <a href="#">Xem chi tiết</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -144,8 +208,10 @@
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <!-- build:js scripts/main.min.js -->
     <script src="scripts/main.js"></script>
+    <script src="scripts/page-income.js"></script>
     <!-- endbuild -->
   </body>
 </html>

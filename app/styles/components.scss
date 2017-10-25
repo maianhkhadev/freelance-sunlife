@@ -1,7 +1,6 @@
 @import "variables";
 
-// title
-.title {
+.page-title {
   color: #003946;
   font-size: 1.25rem;
   font-family: 'Montserrat', sans-serif;
@@ -24,17 +23,27 @@
     z-index: -1;
   }
 }
-.title.fall-down {
+.page-title.fall-down {
   margin-bottom: -1rem;
   z-index: 100;
 }
+.page-subtitle {
+  color: #003946;
+  font-size: 1rem;
+  margin-left: 1rem;
+  margin-bottom: 1.714rem;
+}
 
-// box
 .box {
   position: relative;
   background-color: $color-white;
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2);
   padding: 0.7rem;
+}
+
+.box-contract {
+  padding: 2rem 1.571rem 1.214rem;
+  margin-bottom: 0.7143rem;
 
   .title {
     color: $color-white;
@@ -47,10 +56,6 @@
     border-radius: 1px;
     margin: 0;
   }
-}
-.box-contract {
-  padding: 1.75rem 1.571rem 1.214rem;
-  margin-bottom: 0.7143rem;
 
   div {
     color: #181818;
@@ -63,40 +68,31 @@
     }
   }
 }
-// Americano
-.box-orange {
+.box-contract-orange {
 
   .title {
     background-color: #d0651e;
   }
 }
-
-// Americano
-.box-brown {
+.box-contract-brown {
 
   .title {
     background-color: #82786F;
   }
 }
-
-// Dark Olive Green
-.box-green {
+.box-contract-green {
 
   .title {
     background-color: #658237;
   }
 }
-
-// Sherpa Blue
-.box-blue {
+.box-contract-blue {
 
   .title {
     background-color: #003946;
   }
 }
-
-// Air Force Blue
-.box-light-blue {
+.box-contract-light-blue {
 
   .title {
     background-color: #5482AB;

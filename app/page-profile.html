@@ -36,8 +36,6 @@
     <link rel="canonical" href="http://www.example.com/">
     -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/>
     <script src="https://use.fontawesome.com/264c9776a5.js"></script>
     <!-- Your styles -->
     <link rel="stylesheet" href="styles/core.css">
@@ -102,22 +100,56 @@
         <div class="m-menu-item"><a class="nav-link nav-dksd" href="javascript:void(0)">Điều khoản sử dụng</a></div>
       </div>
     </ul>
-    <div class="container" style="height: 1000px;">
+    <div class="container z-index-1035">
       <div class="row">
         <div class="col-12">
           <div class="d-flex justify-content-end mg-bottom-28">
             <div class="my-acc mr-auto">TÀI KHOẢN <br> <span>CỦA TÔI</span></div>
-            <a href="javascript:void(0)" class="edit-img mt-auto">Đổi hình</a>
+            <a href="javascript:void(0)" class="edit-img mt-auto" data-toggle="modal" data-target="#exampleModal">Đổi hình</a>
           </div>
-          <div class="acc-pos">Họ và tên:</div>
-          <div class="acc-name">Đào Viết Hương</div>
-          <div class="acc-pos">Văn phòng:</div>
-          <div class="acc-district">HỒ Chí Minh - Việt Nam</div>
-          <div class="d-flex justify-content-end mg-bottom-14">
-            <div class="mr-auto">
-              <div class="acc-pos">Vị trí (chức vụ):</div>
-              <div class="acc-cont">Nhân viên tư vấn</div>
+          <div class="pd-v-15">
+            <div class="acc-pos">Họ và tên:</div>
+            <div class="acc-name">Đào Viết Hương</div>
+            <div class="acc-pos">Văn phòng:</div>
+            <div class="acc-district">HỒ Chí Minh - Việt Nam</div>
+            <div class="acc-pos">Vị trí (chức vụ):</div>
+            <div class="acc-cont mg-bottom-14">Nhân viên tư vấn</div>
+            <div class="row mg-bottom-14">
+              <div class="col-6">
+                <div class="acc-pos">Ngày tham gia:</div>
+                <div class="acc-cont">17/10/2007</div>
+              </div>
+              <div class="col-6">
+                <div class="acc-pos">Chứng chỉ TVTC số:</div>
+                <div class="acc-cont">4567-2318-9632</div>
+              </div>
             </div>
+            <div class="row mg-bottom-14">
+              <div class="col-6">
+                <div class="acc-pos">Ngày hết hạn:</div>
+                <div class="acc-cont">17/10/2017</div>
+              </div>
+              <div class="col-6">
+                <div class="acc-pos">Quản lý trực tiếp:</div>
+                <div class="acc-cont">Đinh Thái Lâm</div>
+              </div>
+            </div>
+            <div class="row mg-bottom-14">
+              <div class="col-6">
+                <div class="acc-pos">Ngày sinh:</div>
+                <div class="acc-cont">17/10/1972</div>
+              </div>
+              <div class="col-6">
+                <div class="acc-pos">Nghề nghiệp hiện tại:</div>
+                <div class="acc-cont">NV Văn phòng</div>
+              </div>
+            </div>
+            <div class="acc-pos">Education level:</div>
+            <div class="acc-cont mg-bottom-14">College/University</div>
+            <div class="acc-pos">Email:</div>
+            <div class="acc-cont mg-bottom-14">huong.daoviet@sunlife.com.vn</div>
+            <div class="acc-pos">Điện thoại:</div>
+            <div class="acc-cont mg-bottom-14">+84 976 543</div>
           </div>
         </div>
       </div>
@@ -127,10 +159,27 @@
       © 2017 PT Sun Life Financial Viet Nam. All rights reserved.
     </footer>
 
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true" hidden>&times;</span>
+            </button>
+          </div>
+          <div class="modal-body text-center">
+            <div class="mb-edit">Chỉnh sửa thông tin</div>
+            <input type="text" name="edit" placeholder="test@gmail.com" />
+            <button type="submit">Lưu</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
     <!-- build:js scripts/main.min.js -->
     <script src="scripts/main.js"></script>
     <!-- endbuild -->

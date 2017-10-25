@@ -2,14 +2,9 @@
 (function ($) {
   'use strict'
 
-  // Your custom JavaScript goes here
   $(document).ready(function () {
     $('[data-toggle="offcanvas"]').click(function () {
       $('.row-offcanvas').toggleClass('active')
-    })
-    $('.your-class').slick({
-      dots: true,
-      arrows: false
     })
 
     $('#toggle-menu').on('click', function () {

@@ -1,0 +1,41 @@
+@import "variables";
+
+.box-income {
+  color: #eaab00;
+  text-align: center;
+  margin-bottom: 0.625rem;
+
+  a {
+    color: #003946;
+    font-size: 0.75rem;
+    font-style: italic;
+  }
+
+  .income-detail {
+
+    .data {
+      color: $color-white;
+      font-size: 0.75rem;
+    }
+
+    .data:nth-child(odd) {
+
+      span {
+        color: #eaab00;
+        font-weight: 600;
+      }
+    }
+
+    .data:nth-child(even) {
+
+      span {
+        color: $color-white;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+.box-income.expand {
+  background-color: #003946;
+}

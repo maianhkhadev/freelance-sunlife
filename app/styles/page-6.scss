@@ -1,0 +1,159 @@
+@import "variables";
+
+.ui-datepicker-inline.ui-datepicker.ui-widget{
+  width: 100%;
+  border: none;
+  background: transparent;
+  padding: 0;
+}
+.ui-datepicker-header.ui-widget-header{
+  display: none;
+}
+table.ui-datepicker-calendar thead{
+  display: none;
+}
+table.ui-datepicker-calendar tbody td{
+  padding: 12px;
+  //height: 45px;
+}
+table.ui-datepicker-calendar tbody td.ui-datepicker-other-month{
+  pointer-events: none;
+}
+table.ui-datepicker-calendar tbody td.ui-datepicker-other-month a{
+  opacity: .3 !important;
+  pointer-events: none;
+}
+table.ui-datepicker-calendar tbody td.ui-datepicker-current-day:not(.ui-datepicker-other-month){
+  background: #eaab00 !important;
+  border-radius: 100%;
+  color: #fff !important;
+}
+table.ui-datepicker-calendar tbody td a{
+  border: none !important;
+  text-align: center !important;
+  font-size: 11px !important;
+  font-weight: bold !important;
+  color: #000000 !important;
+}
+table.ui-datepicker-calendar tbody td a.ui-state-default.ui-state-highlight, table.ui-datepicker-calendar tbody td a.ui-state-default.ui-state-active{
+  background: transparent !important;
+}
+.ds-group{
+  position: relative;
+  width: 100%;
+  text-align: right;
+  margin-bottom: 10px;
+  &:before{
+    content: '';
+    background: #003946;
+    height: 5px;
+    width: 48%;
+    position: absolute;
+    top: 13px;
+    left: 0;
+    z-index: -1;
+
+    @media screen and (min-width: 768px){
+      width: 35%;
+    }
+    @media screen and (min-width: 992px){
+      width: 54%;
+    }
+    @media screen and (max-width: 374px){
+      width: 40%;
+    }
+  }
+  .dropdown{
+    display: inline-block;
+    button{
+      background: transparent !important;
+      border: none !important;
+      border-color: transparent !important;
+      outline: none !important;
+      box-shadow: none !important;
+      font-size: 14px;
+      font-weight: 600;
+      color: #181818 !important;
+      padding-right: 20px;
+      &:after{
+        content: "";
+        background: url(/images/menu/arr-down.svg) no-repeat 50%;
+        width: 13px !important;
+        height: 14px !important;
+        margin: 0;
+        vertical-align: 0;
+        border: none !important;
+        font-size: 14px;
+        color: #eaab00;
+        position: absolute;
+        right: 0;
+        top: 8px;
+        transform: rotate(90deg);
+        transition: all .3s ease;
+      }
+    }
+    .dropdown-menu{
+      .dropdown-item{
+        font-size: 14px;
+        color: #181818;
+        padding-top: 9px;
+        padding-left: 8px;
+        border: none;
+        &:hover, &:focus, &.active{
+          background: #ececec;
+          color: #181818;
+        }
+      }
+    }
+  }
+  .ds-item{
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+    &:after{
+      content: '';
+      background: url('/images/menu/arr-down.svg') no-repeat center;
+      width: 13px;
+      height: 14px;
+      font-size: 14px;
+      color: #eaab00;
+      position: absolute;
+      right: 0;
+      top: 5px;
+      transform: rotate(90deg);
+      transition: all .3s ease;
+      pointer-events: none;
+    }
+  }
+  select{
+    outline: none;
+    font-size: 14px;
+    font-weight: 600;
+    color: #181818;
+    option{
+      font-size: 14px;
+      color: #181818;
+      padding-top: 9px;
+      padding-left: 8px;
+    }
+  }
+}
+.ds-note{
+  margin-top: 21px;
+  .dn-item{
+    background: #fff;
+    padding: 17px 15px 17px 72px;
+    margin-bottom: 10px;
+    .dn-name{
+      color: #003946;
+      font-size: 12px;
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+    .dn-tag{
+      font-size: 12px;
+      font-weight: 300;
+      color: #82786f;
+    }
+  }
+}

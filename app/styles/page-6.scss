@@ -1,15 +1,17 @@
 @import "variables";
 
-td::before {
-  content: '';
-  padding-top: 100%;
-  background-color: azure;
-}
+//td::before {
+//  content: '';
+//  padding-top: 100%;
+//  background-color: azure;
+//}
 .ui-datepicker-inline.ui-datepicker.ui-widget{
   width: 100%;
+  max-width: 345px;
   border: none;
   background: transparent;
   padding: 0;
+  margin: 0 auto;
 }
 .ui-datepicker-header.ui-widget-header{
   display: none;
@@ -19,7 +21,7 @@ table.ui-datepicker-calendar thead{
 }
 table.ui-datepicker-calendar tbody td{
   padding: 12px;
-  //height: 45px;
+  height: 49px;
 }
 table.ui-datepicker-calendar tbody td.ui-datepicker-other-month{
   pointer-events: none;
@@ -29,22 +31,10 @@ table.ui-datepicker-calendar tbody td.ui-datepicker-other-month a{
   pointer-events: none;
 }
 table.ui-datepicker-calendar tbody td.ui-datepicker-current-day:not(.ui-datepicker-other-month){
-  //background: #eaab00 !important;
-  //border-radius: 100%;
-  //color: #fff !important;
+  background: #eaab00 !important;
+  border-radius: 100%;
+  color: #fff !important;
   position: relative;
-  &:before{
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 80%;
-    height: 100%;
-    background: #eaab00;
-    border-radius: 50%;
-    transform: translate(-50%, -50%);
-    z-index: -1;
-  }
 }
 table.ui-datepicker-calendar tbody td a{
   border: none !important;

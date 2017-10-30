@@ -25,7 +25,7 @@
   }
 }
 #rp-tabpanel{
-  ul{
+  ul.nav.nav-tabs{
     padding-left: 20px;
     padding-right: 20px;
     margin-bottom: 18px;
@@ -58,145 +58,12 @@
       }
     }
   }
-  .tab-pane{
-    background: #fff;
-    padding: 15px 13px 22px 15px;
-    .tabp-title{
-      font-size: 18px;
-      font-weight: 600;
-      color: #eaab00;
-      margin-bottom: 3px;
-    }
-    .tabp-time{
-      font-size: 12px;
-      font-weight: 300;
-      color: #82786f;
-      margin-bottom: 13px;
-    }
-    .tabp-code{
-      font-size: 14px;
-      font-weight: 600;
-      color: #003946;
-      margin-bottom: 17px;
-      position: relative;
-      display: inline-block;
-      padding-right: 20px;
-      &:after{
-        content: '';
-        background: url('../images/menu/arr-down.svg') no-repeat center;
-        width: 13px;
-        height: 14px;
-        font-size: 14px;
-        color: #eaab00;
-        position: absolute;
-        top: 3px;
-        right: 0;
-        transform: rotate(90deg);
-      }
-    }
-    .tabp-fyp{
-      font-size: 12px;
-      font-weight: 300;
-      color: #82786f;
-      margin-bottom: 47px;
-      span{
-        font-size: 20px;
-        font-weight: 600;
-        color: #181818;
-        margin-right: 6px;
-      }
-    }
-    .tabp-level{
-      font-size: 12px;
-      font-weight: 600;
-      color: #181818;
-      margin-bottom: 20px;
-      span{
-        font-size: 18px;
-        font-weight: 600;
-        color: #eaab00;
-        margin-left: 5px;
-      }
-    }
-    .tabp-profit{
-      font-size: 14px;
-      font-weight: 600;
-      color: #181818;
-      margin-bottom: 14px;
-    }
-    .tabp-profit1{
-      font-size: 12px;
-      font-weight: 300;
-      color: #181818;
-      margin-bottom: 14px;
-    }
-    .tabp-profit-number{
-      font-size: 24px;
-      font-weight: 600;
-      color: #eaab00;
-      margin-bottom: 12px;
-    }
-    .tabp-hd{
-      margin-top: 27px;
-      font-size: 12px;
-      font-weight: 600;
-      color: #181818;
-      span{
-        font-size: 18px;
-        font-weight: 600;
-        color: #eaab00;
-        margin-left: 5px;
-      }
-    }
-    .tabp-progress{
-      margin-bottom: 50px;
-      padding-right: 15px;
-      position: relative;
-      ul{
-        padding: 0;
-        list-style-type: none;
-        position: absolute;
-        width: 109%;
-        li{
-          width: 25%;
-          float: left;
-          font-size: 12px;
-          color: #d0651e;
-          text-align: center;
-        }
-        &.progress-top{
-          top: -25px;
+}
 
-        }
-        &.progress-mid{
-          top: -7px;
-          li{
-            height: 42px;
-            span{
-              width: 1px;
-              background: #d0651e;
-              height: 42px;
-              display: inline-block;
-            }
-          }
-        }
-        &.progress-bottom{
-          top: 35px;
-        }
-      }
-      .progress{
-        height: 30px;
-        background: #c0c0c0;
-        border-radius: 0;
-        .progress-bar{
-          background: #eaab00;
-          height: 100%;
-          text-align: right;
-          padding-right: 10px;
-          padding-top: 8px;
-          font-size: 14px;
-        }
-      }
+.tabp-progress {
+  ul {
+    li {
+      width: 25%;
     }
   }
 }

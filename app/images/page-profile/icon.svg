@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 41 41">
+    <g fill="none" fill-rule="evenodd">
+        <path d="M.125.41h40v40h-40z"/>
+        <g opacity=".3">
+            <path d="M7.625 7.66h25v25h-25z"/>
+            <g stroke="#EAAB00">
+                <path stroke-linecap="round" d="M14.125 11.16h15v15"/>
+                <path stroke-linecap="square" d="M28.875 10.91L10.868 28.917"/>
+            </g>
+        </g>
+    </g>
+</svg>

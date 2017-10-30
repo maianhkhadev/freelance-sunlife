@@ -49,10 +49,21 @@
   font-size: 12px;
   color: #eaab00;
   opacity: .7;
-  padding-left: 21px;
+  padding-left: 30px;
+  position: relative;
+  &:before{
+    content: '';
+    background: url('../images/page-profile/icon.svg') no-repeat center;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 0px;
+    top: -6px;
+  }
   &:hover, &:focus{
     color: #eaab00;
     text-decoration: none;
+    outline: none;
   }
 }
 .acc-pos{
@@ -78,6 +89,20 @@
   font-size: 14px;
   font-weight: 600;
   color: #003946;
+  &.acc-edit{
+    position: relative;
+    display: inline-block;
+    padding-right: 18px;
+    &:after{
+      content: '';
+      background: url('../images/page-profile/icon1.svg') no-repeat center;
+      width: 14px;
+      height: 14px;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+  }
 }
 
 .modal{

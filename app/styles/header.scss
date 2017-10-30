@@ -4,10 +4,11 @@ header {
   z-index: 1034;
   position: sticky;
   top: 0;
-  .nav-header{
+  .nav-header {
     position: relative;
     transition: left 0.3s;
     z-index: 1034;
+    padding-top: 10px;
     padding-bottom: 10px;
     &.out {
       left: 77% !important;
@@ -16,7 +17,7 @@ header {
   #toggle-menu {
     background: transparent;
     color: #fff;
-    top: 10px;
+    top: 5px;
     left: 10px;
     height: 100%;
     width: 30px;
@@ -69,16 +70,18 @@ header {
       }
     }
   }
-  &.subpage{
-    background: url('/images/menu/character.jpg') no-repeat center;
+  &.subpage {
+    background: url('../images/menu/character.jpg') no-repeat center;
     background-size: cover;
     min-height: 195px;
     position: relative;
     top: 38px;
     margin-top: -38px;
+
     #toggle-menu {
       overflow: hidden;
-      span{
+
+      span {
         opacity: 0;
       }
       &:before, &:after {
@@ -103,8 +106,9 @@ header {
       }
     }
   }
-  &.subpage1{
+  &.subpage1 {
     background: #003946;
+    
     #toggle-menu {
       overflow: hidden;
       span{
@@ -166,7 +170,7 @@ header {
   .m-info {
     padding-bottom: 10px;
     height: 217px;
-    background: url('/images/menu/character.jpg') no-repeat center;
+    background: url('../images/menu/character.jpg') no-repeat center;
     background-size: cover;
     .w-100{
       width: 100%;
@@ -178,7 +182,7 @@ header {
       padding: 0 30px;
       &:after{
         content: '';
-        background: url('/images/menu/arr-right.svg') no-repeat center;
+        background: url('../images/menu/arr-right.svg') no-repeat center;
         width: 17px;
         height: 17px;
         position: absolute;
@@ -186,20 +190,20 @@ header {
         top: 4px;
       }
     }
-    hr{
+    hr {
       margin-top: 10px;
       margin-bottom: 10px;
       border: 1px solid #ffffff;
     }
-    .m-info-text{
+    .m-info-text {
       font-size: 12px;
       font-weight: 300;
       position: relative;
       padding-left: 25px;
-      &.m-info-pass{
-        &:before{
+      &.m-info-pass {
+        &:before {
           content: '';
-          background: url('/images/menu/password.svg') no-repeat center;
+          background: url('../images/menu/password.svg') no-repeat center;
           width: 20px;
           height: 20px;
           position: absolute;
@@ -207,10 +211,10 @@ header {
           top: -3px;
         }
       }
-      &.m-info-logout{
-        &:before{
+      &.m-info-logout {
+        &:before {
           content: '';
-          background: url('/images/menu/logout.svg') no-repeat center;
+          background: url('../images/menu/logout.svg') no-repeat center;
           width: 20px;
           height: 20px;
           position: absolute;
@@ -220,27 +224,27 @@ header {
       }
     }
   }
-  .m-menu{
+  .m-menu {
     padding-top: 38px;
     padding-bottom: 40px;
-    .m-menu-item{
+    .m-menu-item {
       font-size: 13px;
       position: relative;
-      a{
+      a {
         display: block;
         width: 100%;
         color: #fff;
         position: relative;
         text-decoration: none !important;
-        &.nav-link{
+        &.nav-link {
           padding-left: 54px;
           padding-right: 5px;
           padding-top: 10px;
           padding-bottom: 10px;
-          &.nav-home{
-            &:before{
+          &.nav-home {
+            &:before {
               content: '';
-              background: url('/images/menu/home.svg') no-repeat center;
+              background: url('../images/menu/home.svg') no-repeat center;
               width: 20px;
               height: 20px;
               position: absolute;
@@ -248,10 +252,10 @@ header {
               top: 8px;
             }
           }
-          &.nav-search{
-            &:before{
+          &.nav-search {
+            &:before {
               content: '';
-              background: url('/images/menu/search.svg') no-repeat center;
+              background: url('../images/menu/search.svg') no-repeat center;
               width: 20px;
               height: 20px;
               position: absolute;
@@ -259,10 +263,10 @@ header {
               top: 8px;
             }
           }
-          &.nav-files{
-            &:before{
+          &.nav-files {
+            &:before {
               content: '';
-              background: url('/images/menu/file.svg') no-repeat center;
+              background: url('../images/menu/file.svg') no-repeat center;
               width: 16px;
               height: 20px;
               position: absolute;
@@ -270,10 +274,10 @@ header {
               top: 8px;
             }
           }
-          &.nav-hdong{
-            &:before{
+          &.nav-hdong {
+            &:before {
               content: '';
-              background: url('/images/menu/hdong.svg') no-repeat center;
+              background: url('../images/menu/hdong.svg') no-repeat center;
               width: 16px;
               height: 20px;
               position: absolute;
@@ -281,10 +285,10 @@ header {
               top: 8px;
             }
           }
-          &.nav-baohiem{
-            &:before{
+          &.nav-baohiem {
+            &:before {
               content: '';
-              background: url('/images/menu/baohiem.svg') no-repeat center;
+              background: url('../images/menu/baohiem.svg') no-repeat center;
               width: 16px;
               height: 20px;
               position: absolute;
@@ -292,10 +296,10 @@ header {
               top: 8px;
             }
           }
-          &.nav-dksd{
-            &:before{
+          &.nav-dksd {
+            &:before {
               content: '';
-              background: url('/images/menu/dksd.svg') no-repeat center;
+              background: url('../images/menu/dksd.svg') no-repeat center;
               width: 24px;
               height: 20px;
               position: absolute;
@@ -316,7 +320,7 @@ header {
             position: relative;
             &:after{
               content: '';
-              background: url('/images/menu/arr-down.svg') no-repeat center;
+              background: url('../images/menu/arr-down.svg') no-repeat center;
               width: 13px;
               height: 14px;
               font-size: 14px;
@@ -328,13 +332,13 @@ header {
               transition: all .3s ease;
             }
           }
-          &.show{
-            &:after{
+          &.show {
+            &:after {
               transform: rotate(270deg);
             }
           }
         }
-        .m-dropdown-item{
+        .m-dropdown-item {
           background: rgba(255, 255, 255, 0.1);
           visibility: hidden;
           height: 0;
@@ -342,14 +346,15 @@ header {
           -webkit-transform: scale(0);
           transform: scale(0);
           transition: all .3s ease;
-          a{
+          a {
             padding-left: 65px;
             padding-top: 10px;
-            &:last-child{
+
+            &:last-child {
               padding-bottom: 10px;
             }
           }
-          &.show{
+          &.show {
             visibility: visible;
             height: auto;
             opacity: 1;

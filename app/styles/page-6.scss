@@ -1,5 +1,10 @@
 @import "variables";
 
+td::before {
+  content: '';
+  padding-top: 100%;
+  background-color: azure;
+}
 .ui-datepicker-inline.ui-datepicker.ui-widget{
   width: 100%;
   border: none;

@@ -1,6 +1,6 @@
 /**
  *
- *  Web Starter Kit
+ *  SUNLIFE APPLICATION
  *  Copyright 2015 Google Inc. All rights reserved.
  *
  *  Licensed under the Apache License, Version 2.0 (the "License");
@@ -109,7 +109,11 @@ gulp.task('scripts', () =>
       // Note: Since we are not using useref in the scripts build pipeline,
       //       you need to explicitly list your scripts here in the right order
       //       to be correctly concatenated
-      './app/scripts/main.js'
+      './app/scripts/main.js',
+      './app/scripts/page-calendar.js',
+      './app/scripts/page-home.js',
+      './app/scripts/page-income.js',
+      './app/scripts/page-info.js'
       // Other scripts
     ])
       .pipe($.newer('.tmp/scripts'))
@@ -117,7 +121,7 @@ gulp.task('scripts', () =>
       .pipe($.babel())
       .pipe($.sourcemaps.write())
       .pipe(gulp.dest('.tmp/scripts'))
-      .pipe($.concat('main.min.js'))
+      // .pipe($.concat('main.min.js'))
       .pipe($.uglify({preserveComments: 'some'}))
       // Output files
       .pipe($.size({title: 'scripts'}))
@@ -135,17 +139,17 @@ gulp.task('html', () => {
     }))
 
     // Minify any HTML
-    .pipe($.if('*.html', $.htmlmin({
-      removeComments: true,
-      collapseWhitespace: true,
-      collapseBooleanAttributes: true,
-      removeAttributeQuotes: true,
-      removeRedundantAttributes: true,
-      removeEmptyAttributes: true,
-      removeScriptTypeAttributes: true,
-      removeStyleLinkTypeAttributes: true,
-      removeOptionalTags: true
-    })))
+    // .pipe($.if('*.html', $.htmlmin({
+    //   removeComments: true,
+    //   collapseWhitespace: true,
+    //   collapseBooleanAttributes: true,
+    //   removeAttributeQuotes: true,
+    //   removeRedundantAttributes: true,
+    //   removeEmptyAttributes: true,
+    //   removeScriptTypeAttributes: true,
+    //   removeStyleLinkTypeAttributes: true,
+    //   removeOptionalTags: true
+    // })))
     // Output files
     .pipe($.if('*.html', $.size({title: 'html', showFiles: true})))
     .pipe(gulp.dest('dist'));

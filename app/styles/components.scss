@@ -99,6 +99,74 @@
   }
 }
 
+.box-um {
+
+  .title {
+    color: #003946;
+    font-size: 1rem;
+    font-weight: 600;
+    position: relative;
+    display: inline-block;
+    padding-right: 1.429rem;
+    margin-bottom: 0.25rem;
+
+    &:after{
+      content: '';
+      background: url('../images/menu/arr-down.svg') no-repeat center;
+      width: 13px;
+      height: 14px;
+      font-size: 14px;
+      color: #eaab00;
+      position: absolute;
+      top: 3px;
+      right: 0;
+      transform: rotate(90deg);
+    }
+  }
+
+  .detail {
+    color: $color-white;
+    background-color: #003946;
+    margin-right: -1.286rem;
+    margin-left: -1.286rem;
+    transition: all 0.3s ease;
+    transform: scale(0);
+    height: 0;
+    opacity: 0;
+    padding: 0;
+    visibility: hidden;
+    margin-bottom: 0.7143rem;
+
+    &.show {
+      transform: scale(1);
+      visibility: visible;
+      height: auto;
+      opacity: 1;
+      padding: 1.25rem;
+    }
+    
+    .tcd {
+      font-size: 0.8571rem;
+      border-bottom: 1px solid rgba($color-white, 0.2);
+      padding-top: 0.5rem;
+      padding-bottom: 0.35rem;
+
+      &.tcd1 {
+        font-size: 1rem;
+        font-weight: 600;
+        padding-left: 1rem;
+        padding-top: 0;
+      }
+      &.tcd2 {
+        padding-left: 2rem;
+      }
+      &.tcd3 {
+        padding-left: 3rem;
+      }
+    }
+  }
+}
+
 .tabp-progress{
   margin-bottom: 50px;
   padding-right: 15px;
@@ -149,22 +217,22 @@
   }
 }
 
-.tab-pane{
+.tab-pane {
   background: #fff;
   padding: 15px 13px 22px 15px;
-  .tabp-title{
+  .tabp-title {
     font-size: 18px;
     font-weight: 600;
     color: #eaab00;
     margin-bottom: 3px;
   }
-  .tabp-time{
+  .tabp-time {
     font-size: 12px;
     font-weight: 300;
     color: #82786f;
     margin-bottom: 13px;
   }
-  .tabp-code{
+  .tabp-code {
     font-size: 14px;
     font-weight: 600;
     color: #003946;

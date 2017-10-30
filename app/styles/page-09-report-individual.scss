@@ -1,0 +1,84 @@
+@import "variables";
+
+.title {
+  color: #eaab00;
+  font-size: 1.286rem;
+  font-weight: 600;
+  margin-bottom: 0.8571rem;
+
+  div {
+    color: #82786f;
+    font-size: 0.8571rem;
+    font-weight: 300;
+  }
+}
+.subtitle {
+  color: #003946;
+  font-size: 1rem;
+  margin-bottom: 0.8571rem;
+
+  div {
+    font-size: 0.8571rem;
+  }
+}
+
+.box-total {
+  color: #181818;
+  font-size: 11px;
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 1.786rem;
+
+  span {
+    color: #eaab00;
+    font-size: 1.286rem;
+    font-style: normal;
+    font-weight: 600;
+  }
+}
+
+.box-sales {
+
+  .title {
+    color: #181818;
+    font-size: 0.8571rem;
+    font-weight: 600;
+  }
+  .table {
+    margin-bottom: 2rem;
+
+    td, th {
+      padding: .5rem;
+      vertical-align: middle;
+      border-top: none;
+    }
+    .column-name, .row-name {
+      color: #181818;
+      font-size: 0.7857rem;
+      font-weight: 600;
+      text-align: center;
+    }
+    .cell {
+      color: #eaab00;
+      font-size: 1rem;
+      font-weight: 600;
+      text-align: center;
+    }
+    .border-top {
+      border-top: 1px solid #e9ecef;
+    }
+    .border-right {
+      border-right: 1px solid #e9ecef;
+    }
+  }
+  .ratio {
+    color: #181818;
+    font-size: 0.8571rem;
+    font-weight: 600;
+
+    span {
+      color: #eaab00;
+      font-size: 1.286rem;
+    }
+  }
+}

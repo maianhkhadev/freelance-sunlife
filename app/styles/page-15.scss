@@ -67,3 +67,94 @@
     }
   }
 }
+
+.tab-pane {
+  .tabp-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #eaab00;
+    margin-bottom: 3px;
+  }
+  .tabp-time {
+    font-size: 12px;
+    font-weight: 300;
+    color: #82786f;
+    margin-bottom: 13px;
+  }
+  .tabp-code {
+    font-size: 14px;
+    font-weight: 600;
+    color: #003946;
+    margin-bottom: 5px;
+    position: relative;
+    display: inline-block;
+    padding-right: 20px;
+    &:after {
+      content: '';
+      background: url('../images/menu/arr-down.svg') no-repeat center;
+      width: 13px;
+      height: 14px;
+      font-size: 14px;
+      color: #eaab00;
+      position: absolute;
+      top: 3px;
+      right: 0;
+      transform: rotate(90deg);
+    }
+  }
+  .tabp-fyp{
+    font-size: 12px;
+    font-weight: 300;
+    color: #82786f;
+    padding-top: 12px;
+    margin-bottom: 47px;
+    span{
+      font-size: 20px;
+      font-weight: 600;
+      color: #181818;
+      margin-right: 6px;
+    }
+  }
+  .tabp-level{
+    font-size: 12px;
+    font-weight: 600;
+    color: #181818;
+    margin-bottom: 20px;
+    span{
+      font-size: 18px;
+      font-weight: 600;
+      color: #eaab00;
+      margin-left: 5px;
+    }
+  }
+  .tabp-profit{
+    font-size: 14px;
+    font-weight: 600;
+    color: #181818;
+    margin-bottom: 14px;
+  }
+  .tabp-profit1{
+    font-size: 12px;
+    font-weight: 300;
+    color: #181818;
+    margin-bottom: 14px;
+  }
+  .tabp-profit-number{
+    font-size: 24px;
+    font-weight: 600;
+    color: #eaab00;
+    margin-bottom: 12px;
+  }
+  .tabp-hd{
+    margin-top: 27px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #181818;
+    span{
+      font-size: 18px;
+      font-weight: 600;
+      color: #eaab00;
+      margin-left: 5px;
+    }
+  }
+}

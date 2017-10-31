@@ -1,0 +1,30 @@
+body {
+  display: flex;
+  flex-direction: column;
+}
+footer{
+  margin-top: auto;
+  padding-bottom: 10px;
+}
+.z-index-1033{
+  position: relative;
+  z-index: 1033;
+}
+form.form-groups{
+  .search-group{
+    .s-subtitle{
+      font-size: 14px;
+      color: #003946;
+      margin-bottom: 20px;
+    }
+    .s-subtitle1{
+      font-size: 13px;
+      font-weight: 300;
+      color: #181818;
+      margin: 17px 0;
+    }
+    input{
+      margin-bottom: 0;
+    }
+  }
+}

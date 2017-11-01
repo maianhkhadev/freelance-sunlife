@@ -35,6 +35,9 @@ table.ui-datepicker-calendar tbody td.ui-datepicker-current-day:not(.ui-datepick
   border-radius: 100%;
   color: #fff !important;
   position: relative;
+  a{
+    color: #fff !important;
+  }
 }
 table.ui-datepicker-calendar tbody td a{
   border: none !important;
@@ -152,6 +155,29 @@ table.ui-datepicker-calendar tbody td a.ui-state-default.ui-state-highlight, tab
     background: #fff;
     padding: 17px 15px 17px 72px;
     margin-bottom: 10px;
+    position: relative;
+    &.di1{
+      &:before{
+        content: '';
+        background: url('/images/page-calendar/c1.svg') no-repeat center;
+        width: 32px;
+        height: 30px;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+      }
+    }
+    &.di2{
+      &:before{
+        content: '';
+        background: url('/images/page-calendar/c2.svg') no-repeat center;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+      }
+    }
     .dn-name{
       color: #003946;
       font-size: 12px;

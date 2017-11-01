@@ -113,7 +113,9 @@ gulp.task('scripts', () =>
       './app/scripts/page-calendar.js',
       './app/scripts/page-home.js',
       './app/scripts/page-income.js',
-      './app/scripts/page-info.js'
+      './app/scripts/page-news.js',
+      './app/scripts/page-09-10.js',
+      './app/scripts/page-12-15.js'
       // Other scripts
     ])
       .pipe($.newer('.tmp/scripts'))
@@ -200,7 +202,7 @@ gulp.task('serve:dist', ['default'], () =>
 gulp.task('default', ['clean'], cb =>
   runSequence(
     'styles',
-    ['lint', 'html', 'scripts', 'images', 'copy'],
+    ['html', 'scripts', 'images', 'copy'],
     cb
   )
 );

@@ -1,0 +1,111 @@
+@import "variables";
+
+.z-index-1033 {
+  position: relative;
+  z-index: 1033;
+}
+.box {
+  padding: 1rem;
+}
+
+.title {
+  color: #eaab00;
+  font-size: 1.286rem;
+  font-weight: 600;
+  margin-bottom: 0.8571rem;
+
+  div {
+    color: #82786f;
+    font-size: 0.8571rem;
+    font-weight: 300;
+  }
+}
+
+.unit {
+  color: #82786f;
+  font-size: 0.8571rem;
+  font-weight: 300;
+  margin-bottom: 5.357rem;
+
+  span {
+    color: #181818;
+    font-size: 1.429rem;
+    font-weight: 600;
+    margin-right: 0.5rem;
+  }
+}
+
+.tickets {
+  color: #181818;
+  font-size: 1.429rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.text {
+  color: #181818;
+  font-size: 0.8571rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+.text-number {
+  color: #eaab00;
+  font-size: 1.714rem;
+  font-weight: 600;
+  text-align: right;
+  margin-bottom: 0.8571rem;
+}
+
+.note {
+  color: #82786f;
+  font-size: 0.7857rem;
+  font-weight: 300;
+  margin-bottom: 0.8571rem;
+}
+
+#rp-tabpanel {
+  ul.nav.nav-tabs {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 18px;
+    border: none;
+    li {
+      width: 50%;
+      padding-left: 10px;
+      padding-right: 10px;
+      a {
+        display: block;
+        font-size: 13px;
+        font-weight: 600;
+        color: #c0c0c0;
+        width: 100%;
+        position: relative;
+        &:hover, &:focus, &.active {
+          text-decoration: none;
+          color: #181818;
+          &:after {
+            content: '';
+            height: 7px;
+            background: #eaab00;
+            width: 100%;
+            position: absolute;
+            bottom: 1px;
+            left: 0;
+            z-index: -1;
+          }
+        }
+      }
+    }
+  }
+}
+
+.tabp-progress {
+  ul {
+    &.progress-top {
+      top: -50px;
+    }
+    li {
+      width: 15%;
+    }
+  }
+}

@@ -72,3 +72,24 @@ input[type="radio"]:checked {
     font-style: italic;
   }
 }
+
+.arrow-down {
+  padding-right: 1.5rem;
+
+  &:after {
+    content: "";
+    background: url('/images/menu/arr-down.svg') no-repeat 50%;
+    width: 13px !important;
+    height: 14px !important;
+    margin: 0;
+    vertical-align: 0;
+    border: none !important;
+    font-size: 14px;
+    color: #eaab00;
+    position: absolute;
+    right: 0;
+    top: 4px;
+    transform: rotate(90deg);
+    transition: all .3s ease;
+  }
+}

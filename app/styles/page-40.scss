@@ -1,0 +1,77 @@
+.page-subtitle {
+  color: #181818;
+  font-weight: 600;
+  padding-top: 0.3rem;
+}
+.dropdown{
+  display: inline-block;
+
+  button {
+    color: #181818 !important;
+    background: transparent !important;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none !important;
+    border-color: transparent !important;
+    outline: none !important;
+    box-shadow: none !important;
+    padding-right: 20px;
+
+    &:after {
+      content: "";
+      background: url('/images/menu/arr-down.svg') no-repeat 50%;
+      width: 13px !important;
+      height: 14px !important;
+      margin: 0;
+      vertical-align: 0;
+      border: none !important;
+      font-size: 14px;
+      color: #eaab00;
+      position: absolute;
+      right: 0;
+      top: 8px;
+      transform: rotate(90deg);
+      transition: all .3s ease;
+    }
+  }
+  .dropdown-menu {
+    .dropdown-item {
+      font-size: 1rem;
+      color: #181818;
+      padding-top: 9px;
+      padding-left: 8px;
+      border: none;
+      &:hover, &:focus, &.active{
+        background: #ececec;
+        color: #181818;
+      }
+    }
+  }
+}
+
+.table {
+
+  td, th {
+    padding: .5rem;
+    vertical-align: middle;
+    border-top: none;
+  }
+  .column-name, .row-name {
+    color: #181818;
+    font-size: 0.7857rem;
+    font-weight: 600;
+    text-align: center;
+  }
+  .cell {
+    color: #eaab00;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+  }
+  .border-top {
+    border-top: 1px solid #e9ecef;
+  }
+  .border-right {
+    border-right: 1px solid #e9ecef;
+  }
+}

@@ -23,6 +23,10 @@ footer{
   position: relative;
   .logo {
     width: 71%;
+    margin-top: 100px;
+    margin-bottom: 121px;
+  }
+  .logo1{
     margin-top: 48px;
     margin-bottom: 23px;
   }
@@ -38,14 +42,6 @@ footer{
     color: #003946;
     margin-bottom: 31px;
   }
-  .security-close{
-    //border: 1px solid #181818;
-    //border-left: none;
-    //display: inline-block;
-    //position: absolute;
-    //top: 0;
-    //right: 0;
-  }
   ul.security-dots{
     padding-left: 0;
     list-style-type: none;
@@ -54,11 +50,13 @@ footer{
     margin-bottom: 60px;
     position: relative;
     span{
-      font-size: 14px;
-      color: #000000;
+      background: url('../images/page-login/close.svg') no-repeat center;
+      width: 23px;
+      height: 17px;
+      display: inline-block;
       position: absolute;
-      top: 0;
-      right: -40px;
+      top: -5px;
+      right: -55px;
     }
     li{
       float: left;
@@ -104,16 +102,21 @@ footer{
   .input-group{
     margin-bottom: 0 !important;
     .input-group-addon{
-      background: url('../images/menu/password.svg') no-repeat center;
+      &.iga-name{
+        background: url('../images/page-login/username.svg') no-repeat center;
+      }
+      &.iga-pass{
+        background: url('../images/page-login/password.svg') no-repeat center;
+      }
       position: absolute;
       background-color: transparent;
       border: none;
       border-radius: 0;
       padding: 0;
-      top: 18px;
+      top: 15px;
       left: 22px;
-      width: 20px;
-      height: 20px
+      width: 25px;
+      height: 25px
     }
     input{
       background: transparent;

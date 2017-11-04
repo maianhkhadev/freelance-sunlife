@@ -29,10 +29,20 @@
     padding: 0 15px 20px 20px;
   }
   .date{
-    padding-left: 25px;
+    padding-left: 29px;
     font-size: 10px;
     color: #000000;
     margin-bottom: 16px;
+    position: relative;
+    &:before{
+      content: '';
+      background: url('../images/page-news/time.svg') no-repeat center;
+      width: 15px;
+      height: 15px;
+      position: absolute;
+      top: 0;
+      left: 7px;
+    }
   }
   p{
     margin-bottom: 20px;

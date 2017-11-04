@@ -4,7 +4,12 @@
 
   $(document).ready(function () {
     $('.box-um .title').on('click', function () {
-      $('.box-um .detail').toggleClass('show')
+      $(this).parent().find('.detail').toggleClass('show')
     })
+    // $('#rp-tabpanel a').on('click', function (e) {
+    //   e.preventDefault()
+    //   $(this).tab('show')
+    // })
+
   })
 })(jQuery)

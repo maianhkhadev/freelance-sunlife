@@ -4,6 +4,7 @@ header {
   z-index: 1034;
   position: sticky;
   top: 0;
+  transition: all .3s ease;
   .nav-header {
     position: relative;
     transition: left 0.3s;
@@ -107,9 +108,19 @@ header {
     }
   }
   &.subpage1 {
+    @media screen and (min-width: 768px){
+      background: #cdcdcd;
+      height: 50px;
+      img{
+        display: none !important;
+      }
+    }
     background: #003946;
-    
+
     #toggle-menu {
+      @media screen and (min-width: 768px){
+        display: none;
+      }
       overflow: hidden;
       span{
         opacity: 0;
@@ -143,6 +154,7 @@ header {
   left: 0;
   width: 70%;
   min-width: 300px;
+  max-width: 300px;
   position: fixed;
   transition: left 0.3s;
   background-color: #003946;
@@ -158,11 +170,19 @@ header {
   @media screen and (max-width: 374px){
     min-width: 255px;
   }
+  .mm-logo{
+    padding: 10px 0;
+    @media screen and (max-width: 767px){
+      display: none;
+    }
+  }
   &::-webkit-scrollbar {
     display: none;
   }
   &.in {
-    left: -80% !important;
+    @media screen and (max-width: 767px){
+      left: -80% !important;
+    }
     @media screen and (max-width: 374px){
       left: -100%;
     }

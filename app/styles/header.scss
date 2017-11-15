@@ -12,7 +12,14 @@ header {
     padding-top: 10px;
     padding-bottom: 10px;
     &.out {
-      left: 77% !important;
+      //left: 300px;
+      @media screen and (min-width: 1550px){
+        left: 65% !important;
+      }
+      left: 70% !important;
+      @media screen and (max-width: 410px){
+        left: 80% !important;
+      }
     }
   }
   #toggle-menu {
@@ -108,19 +115,19 @@ header {
     }
   }
   &.subpage1 {
-    @media screen and (min-width: 768px){
-      background: #cdcdcd;
-      height: 50px;
-      img{
-        display: none !important;
-      }
-    }
+    //@media screen and (min-width: 768px){
+    //  background: #cdcdcd;
+    //  height: 50px;
+    //  img{
+    //    display: none !important;
+    //  }
+    //}
     background: #003946;
 
     #toggle-menu {
-      @media screen and (min-width: 768px){
-        display: none;
-      }
+      //@media screen and (min-width: 768px){
+      //  display: none;
+      //}
       overflow: hidden;
       span{
         opacity: 0;
@@ -154,7 +161,7 @@ header {
   left: 0;
   width: 70%;
   min-width: 300px;
-  max-width: 300px;
+  //max-width: 300px;
   position: fixed;
   transition: left 0.3s;
   background-color: #003946;
@@ -170,19 +177,19 @@ header {
   @media screen and (max-width: 374px){
     min-width: 255px;
   }
-  .mm-logo{
-    padding: 10px 0;
-    @media screen and (max-width: 767px){
-      display: none;
-    }
-  }
+  //.mm-logo{
+  //  padding: 10px 0;
+  //  @media screen and (max-width: 767px){
+  //    display: none;
+  //  }
+  //}
   &::-webkit-scrollbar {
     display: none;
   }
   &.in {
-    @media screen and (max-width: 767px){
-      left: -80% !important;
-    }
+    //@media screen and (max-width: 767px){
+    left: -80% !important;
+    //}
     @media screen and (max-width: 374px){
       left: -100%;
     }
@@ -261,6 +268,9 @@ header {
           padding-right: 5px;
           padding-top: 10px;
           padding-bottom: 10px;
+          @media screen and (max-width: 374px){
+            padding-right: 25px;
+          }
           &.nav-home {
             &:before {
               content: '';

@@ -6,8 +6,11 @@ footer {
   padding-bottom: 0.5714rem;
   transition: all .3s ease;
   &#f-subpage {
+    @media screen and (min-width: 768px){
+      position: fixed;
+    }
     background: #003946;
-    position: fixed;
+    position: sticky;
     left: 0;
     right: 0;
     bottom: 0;

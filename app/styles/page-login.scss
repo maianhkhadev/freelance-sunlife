@@ -2,7 +2,7 @@ body {
   background-image: url('../images/page-login/bim.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top center;
   display: flex;
   flex-direction: column;
   &:before{
@@ -21,6 +21,8 @@ footer{
   padding-left: 10px;
   padding-right: 10px;
   position: relative;
+  max-width: 375px;
+  margin: 0 auto;
   .logo {
     width: 71%;
     margin-top: 100px;

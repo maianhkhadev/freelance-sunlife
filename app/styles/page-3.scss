@@ -1,5 +1,11 @@
 @import "variables";
 
+body{
+  padding-bottom: 70px !important;
+}
+footer{
+  position: absolute !important;
+}
 .dropdown{
   display: inline-block;
   margin-bottom: 25px;

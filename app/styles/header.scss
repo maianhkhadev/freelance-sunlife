@@ -1,24 +1,37 @@
 header {
   overflow: hidden;
   background-color: #eaab00;
-  z-index: 1034;
+  z-index: 1036;
   position: sticky;
   top: 0;
   transition: all .3s ease;
   .nav-header {
     position: relative;
     transition: left 0.3s;
-    z-index: 1034;
+    z-index: 1036;
     padding-top: 10px;
     padding-bottom: 10px;
     &.out {
-      //left: 300px;
-      @media screen and (min-width: 1550px){
-        left: 65% !important;
+      left: 0;
+      //padding-left: 320px;
+      //@media screen and (min-width: 1550px){
+      //  left: 65% !important;
+      //}
+      @media screen and (max-width: 991px){
+        left: 70% !important;
       }
-      left: 70% !important;
       @media screen and (max-width: 410px){
         left: 80% !important;
+      }
+      #toggle-menu {
+        @media screen and (min-width: 992px){
+          position: absolute;
+          left: 320px;
+          top: 2px;
+          &.mt-home{
+            top: 10px;
+          }
+        }
       }
     }
   }
@@ -36,6 +49,10 @@ header {
     outline: none;
     border: none;
     z-index: 1034;
+    transition: all .3s ease;
+    &.mt-home{
+      top: 10px;
+    }
     &:before, &:after, span {
       width: 25px;
       height: 1px;
@@ -161,7 +178,6 @@ header {
   left: 0;
   width: 70%;
   min-width: 300px;
-  //max-width: 300px;
   position: fixed;
   transition: left 0.3s;
   background-color: #003946;
@@ -174,6 +190,9 @@ header {
   color: #fff;
   overflow-x: hidden;
   overflow-y: scroll;
+  @media screen and (min-width: 992px){
+    max-width: 300px;
+  }
   @media screen and (max-width: 374px){
     min-width: 255px;
   }

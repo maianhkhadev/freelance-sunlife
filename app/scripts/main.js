@@ -16,11 +16,16 @@
       $(this).siblings('.m-dropdown-item').toggleClass('show')
     })
     $('.menu-toggler').on('click', function () {
+      $('body').toggleClass('opened')
       $('#toggle-menu').toggleClass('opened')
       $('#main-menu').toggleClass('in')
       $('header .nav-header').toggleClass('out')
+      $('body').toggleClass('out')
     })
     $('.menu-opener').on('click', function () {
+      if (!$('body').hasClass('opened')) {
+        $('body').addClass('opened')
+      }
       if (!$('#toggle-menu').hasClass('opened')) {
         $('#toggle-menu').addClass('opened')
       }
@@ -32,6 +37,9 @@
       }
     })
     $('.menu-closer').on('click', function () {
+      if ($('body').hasClass('opened')) {
+        $('body').removeClass('opened')
+      }
       if ($('#toggle-menu').hasClass('opened')) {
         $('#toggle-menu').removeClass('opened')
       }

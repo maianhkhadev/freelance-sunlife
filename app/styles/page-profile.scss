@@ -1,8 +1,14 @@
 @import "variables";
 
-.z-index-1035 {
+body{
+  padding-bottom: 70px !important;
+}
+footer{
+  position: absolute !important;
+}
+.z-index-1037 {
   position: relative;
-  z-index: 1035;
+  z-index: 1037;
 }
 
 .mg-bottom-28 {

@@ -103,7 +103,7 @@ table.ui-datepicker-calendar tbody td a.ui-state-default.ui-state-highlight, tab
       padding-right: 20px;
       &:after{
         content: "";
-        background: url(/images/menu/arr-down.svg) no-repeat 50%;
+        background: url('../images/menu/arr-down.svg') no-repeat 50%;
         width: 13px !important;
         height: 14px !important;
         margin: 0;
@@ -138,7 +138,7 @@ table.ui-datepicker-calendar tbody td a.ui-state-default.ui-state-highlight, tab
     z-index: 1;
     &:after{
       content: '';
-      background: url('/images/menu/arr-down.svg') no-repeat center;
+      background: url('../images/menu/arr-down.svg') no-repeat center;
       width: 13px;
       height: 14px;
       font-size: 14px;
@@ -174,7 +174,7 @@ table.ui-datepicker-calendar tbody td a.ui-state-default.ui-state-highlight, tab
     &.di1{
       &:before{
         content: '';
-        background: url('/images/page-calendar/c1.svg') no-repeat center;
+        background: url('../images/page-calendar/c1.svg') no-repeat center;
         width: 32px;
         height: 30px;
         position: absolute;
@@ -185,7 +185,7 @@ table.ui-datepicker-calendar tbody td a.ui-state-default.ui-state-highlight, tab
     &.di2{
       &:before{
         content: '';
-        background: url('/images/page-calendar/c2.svg') no-repeat center;
+        background: url('../images/page-calendar/c2.svg') no-repeat center;
         width: 30px;
         height: 30px;
         position: absolute;

@@ -4,10 +4,12 @@ footer {
   text-align: center;
   margin-top: 1.143rem;
   padding-bottom: 0.5714rem;
-
+  transition: all .3s ease;
   &#f-subpage {
     background: #003946;
-    position: sticky;
+    position: fixed;
+    left: 0;
+    right: 0;
     bottom: 0;
     z-index: 1035;
     margin-top: 33px;
